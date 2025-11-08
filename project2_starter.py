@@ -1,7 +1,7 @@
 """
 COMP 163 - Project 2: Character Abilities Showcase
-Name: [Your Name Here]
-Date: [Date]
+Name: Daniel Crandle
+Date: 2025-08-11
 
 AI Usage: [Document any AI assistance used]
 Example: AI helped with inheritance structure and method overriding concepts
@@ -76,7 +76,8 @@ class Character:
         # TODO: Implement basic attack
         # Damage should be based on self.strength
         # Use target.take_damage(damage) to apply damage
-        pass
+        damage = self.strength
+        target.take_damage(damage)
         
     def take_damage(self, damage):
         """
@@ -86,8 +87,10 @@ class Character:
         # TODO: Implement taking damage
         # Reduce self.health by damage amount
         # Make sure health doesn't go below 0
-        pass
-        
+        self.health -= damage
+        if self.health < 0:
+            self.health = 0
+
     def display_stats(self):
         """
         Prints the character's current stats in a nice format.
