@@ -63,7 +63,10 @@ class Character:
         """Initialize basic character attributes"""
         # TODO: Set the character's name, health, strength, and magic
         # These should be stored as instance variables
-        pass
+        self.name = name
+        self.health = health
+        self.strength = strength
+        self.magic = magic
         
     def attack(self, target):
         """
@@ -129,7 +132,9 @@ class Player(Character):
         """
         # TODO: Call the parent's display_stats method using super()
         # TODO: Then print additional player info like class and level
-        pass
+        super().display_stats()
+        print(f"{'Class:':<10} {self.character_class}")
+        print(f"{'Level:':<10} {self.level}")
 
 class Warrior(Player):
     """
