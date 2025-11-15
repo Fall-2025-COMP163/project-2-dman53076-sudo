@@ -3,8 +3,7 @@ COMP 163 - Project 2: Character Abilities Showcase
 Name: Daniel Crandle
 Date: 2025-08-11
 
-AI Usage: [Document any AI assistance used]
-Example: AI helped with inheritance structure and method overriding concepts
+AI Usage: I had the AI explain the inheritance and polymorphism concepts to me in depth.
 """
 
 # ============================================================================
